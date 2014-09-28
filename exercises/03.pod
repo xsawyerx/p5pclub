@@ -1,0 +1,36 @@
+=head1 Exercise 3
+
+=over 4
+
+=item 1. Go over the XSFun tutorial
+
+You can find it here: L<https://github.com/xsawyerx/xs-fun>.
+
+(specifically episodes 0 and 1)
+
+=item 2. Write a function in XS
+
+The function should calculate the sum of an integer array and returns said sum.
+
+=back
+
+Basically you will need to:
+* Be able to accept an array
+* Go over the items in the array
+* Add them all together
+* Return it to the user
+
+Episode 0 will introduce you to XS and give you enough to be able to write
+your own. Episode 1 will show you how adding functions in XS work with a
+bit of SV play.
+
+You should also consult:
+
+=over 4
+
+=item * L<perlapi>
+
+=item * L<perlxs>
+
+=back
+
