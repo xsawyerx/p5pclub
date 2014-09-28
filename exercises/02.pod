@@ -1,0 +1,99 @@
+=head1 Exercise 2
+
+Topic: L<Devel::Peek>
+
+Try and build a data structure in Perl that when you dump it with
+L<Devel::Peek>, looks like the following. In other words: What Perl
+data structure do the following represent?
+
+See also: L<perlguts>.
+
+=over 4
+
+=item * devel-peek-1:
+
+    SV = IV(0xc2f6a0) at 0xc2f6b0
+      REFCNT = 1
+      FLAGS = (TEMP,ROK)
+      RV = 0xc11998
+      SV = PVAV(0xc129e0) at 0xc11998
+        REFCNT = 1
+        FLAGS = ()
+        ARRAY = 0xc293b0
+        FILL = 1
+        MAX = 1
+        ARYLEN = 0x0
+        FLAGS = (REAL)
+        Elt No. 0
+        SV = IV(0xc11bc8) at 0xc11bd8
+          REFCNT = 1
+          FLAGS = (ROK)
+          RV = 0xc3a5f0
+          SV = IV(0xc3a5e0) at 0xc3a5f0
+            REFCNT = 3
+            FLAGS = (PADMY,ROK)
+            RV = 0xc30298
+            SV = IV(0xc30288) at 0xc30298
+              REFCNT = 3
+              FLAGS = (PADMY,IOK,pIOK)
+              IV = 1
+        Elt No. 1
+        SV = IV(0xc2f688) at 0xc2f698
+          REFCNT = 1
+          FLAGS = (ROK)
+          RV = 0xc30298
+          SV = IV(0xc30288) at 0xc30298
+            REFCNT = 3
+            FLAGS = (PADMY,IOK,pIOK)
+            IV = 1
+
+=item * devel-peek-2:
+
+    SV = IV(0x74e278) at 0x74e288
+      REFCNT = 1
+      FLAGS = (PADMY,ROK)
+      RV = 0x74d6b8
+      SV = PVAV(0x7309e0) at 0x74d6b8
+        REFCNT = 1
+        FLAGS = ()
+        ARRAY = 0x7473a0
+        FILL = 1
+        MAX = 1
+        ARYLEN = 0x0
+        FLAGS = (REAL)
+        Elt No. 0
+        SV = IV(0x74d750) at 0x74d760
+          REFCNT = 1
+          FLAGS = (ROK)
+          RV = 0x72f998
+          SV = PVHV(0x735890) at 0x72f998
+            REFCNT = 1
+            FLAGS = (SHAREKEYS)
+            ARRAY = 0x0
+            KEYS = 0
+            FILL = 0
+            MAX = 7
+            RITER = -1
+            EITER = 0x0
+        Elt No. 1
+        SV = IV(0x74d768) at 0x74d778
+          REFCNT = 1
+          FLAGS = (ROK)
+          RV = 0x74d688
+          SV = PVHV(0x735910) at 0x74d688
+            REFCNT = 1
+            FLAGS = (SHAREKEYS)
+            ARRAY = 0x746860  (0:7, 1:1)
+            hash quality = 100.0%
+            KEYS = 1
+            FILL = 1
+            MAX = 7
+            RITER = -1
+            EITER = 0x0
+            Elt "foo" HASH = 0x238678dd
+            SV = IV(0x74d690) at 0x74d6a0
+              REFCNT = 1
+              FLAGS = (IOK,pIOK)
+              IV = 42
+
+=back

@@ -1,0 +1,10 @@
+=head1 Exercise 1
+
+Steffen and Yves had a disagreement about whether the "SVIV" structure has
+a "body"? Have a look at the C<sv.h> header file in the Perl sources
+(development version of Perl recommended).
+
+By reading the code, can you figure out what it means for an SV to have a
+body and whether an "SVIV" structure has a body? What does the SVIV
+structure consist of?
+
