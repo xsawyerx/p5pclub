@@ -1,0 +1,10 @@
+=head1 Exercise 4
+
+Using the supplied template module, write an XSUB that returns an SV
+that evaluates to "The meaning of life" in stringification and to "42"
+in numeric context. This is a dualvar.
+
+You can use the XSFun skeleton as a template:
+
+L<https://github.com/xsawyerx/xs-fun/tree/master/skeleton/XSFun>.
+
