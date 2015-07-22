@@ -1,0 +1,24 @@
+=head1 Exercise 9 (suggested by Mattia Barbon)
+
+This is about returning lists from XS functions.
+
+Implement some variations on the builtin reverse() function using XS.
+
+C<reverse_arr_list>: takes an array reference, returns a list.
+C<reverse_list_list>: takes a list, returns a list.
+C<reverse_list_arr>: takes a list, returns an array reference [1].
+
+Two test files available.
+
+The documentation on how to return a list is hidden in the B<perlxs>
+manpage, if after ten minutes you can't find the correct section, run:
+
+    perl -MMIME::Base64=decode_base64 -e \
+        'print decode_base64(q[IlRoZSBQUENPREU6IEtleXd \
+        vcmQiCiJSZXR1cm5pbmcgU1ZzLCBBVnMgYW5kIE \
+        hWcyB0aHJvdWdoIFJFVFZBTCIK])'
+
+Share & enjoy,
+Mattia.
+
+[1] I know it's not returning a list, but there is a nice hidden trap
